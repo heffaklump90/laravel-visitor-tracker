@@ -131,6 +131,8 @@ class Tracker
      */
     protected static function getVisitData($agent)
     {
+        $agent = $agent ?? '';
+
         $dd = new DeviceDetector($agent);
         $dd->parse();
 
